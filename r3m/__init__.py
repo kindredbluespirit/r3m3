@@ -45,12 +45,16 @@ def load_r3m(modelid):
     home = os.path.join(expanduser("~"), ".r3m")
     if modelid == "resnet50":
         foldername = "r3m_50"
-        modelurl = 'https://drive.google.com/uc?id=1Xu0ssuG0N1zjZS54wmWzJ7-nb0-7XzbA'
-        configurl = 'https://drive.google.com/uc?id=10jY2VxrrhfOdNPmsFdES568hjjIoBJx8'
+        # modelurl = 'https://drive.google.com/uc?id=1Xu0ssuG0N1zjZS54wmWzJ7-nb0-7XzbA'
+        # configurl = 'https://drive.google.com/uc?id=10jY2VxrrhfOdNPmsFdES568hjjIoBJx8'
+        modelurl = 'https://huggingface.co/kindredbluespirit/load_r3m/resolve/main/r3m_50/model.pt'
+        configurl = 'https://huggingface.co/kindredbluespirit/load_r3m/raw/main/r3m_50/config.yaml'
     elif modelid == "resnet34":
         foldername = "r3m_34"
-        modelurl = 'https://drive.google.com/uc?id=15bXD3QRhspIRacOKyWPw5y2HpoWUCEnE'
-        configurl = 'https://drive.google.com/uc?id=1RY0NS-Tl4G7M1Ik_lOym0b5VIBxX9dqW'
+        # modelurl = 'https://drive.google.com/uc?id=15bXD3QRhspIRacOKyWPw5y2HpoWUCEnE'
+        # configurl = 'https://drive.google.com/uc?id=1RY0NS-Tl4G7M1Ik_lOym0b5VIBxX9dqW'
+        modelurl = 'https://huggingface.co/kindredbluespirit/load_r3m/resolve/main/r3m_34/model.pt'
+        configurl = 'https://huggingface.co/kindredbluespirit/load_r3m/raw/main/r3m_34/config.yaml'
     elif modelid == "resnet18":
         foldername = "r3m_18"
         modelurl = 'https://drive.google.com/uc?id=1A1ic-p4KtYlKXdXHcV2QV0cUzI4kn0u-'
@@ -78,8 +82,10 @@ def load_r3m_reproduce(modelid):
     home = os.path.join(expanduser("~"), ".r3m")
     if modelid == "r3m":
         foldername = "original_r3m"
-        modelurl = 'https://drive.google.com/uc?id=1jLb1yldIMfAcGVwYojSQmMpmRM7vqjp9'
-        configurl = 'https://drive.google.com/uc?id=1cu-Pb33qcfAieRIUptNlG1AQIMZlAI-q'
+        # modelurl = 'https://drive.google.com/uc?id=1jLb1yldIMfAcGVwYojSQmMpmRM7vqjp9'
+        # configurl = 'https://drive.google.com/uc?id=1cu-Pb33qcfAieRIUptNlG1AQIMZlAI-q'
+        modelurl = 'https://huggingface.co/kindredbluespirit/load_r3m/resolve/main/original_r3m/model.pt'
+        configurl = 'https://huggingface.co/kindredbluespirit/load_r3m/raw/main/original_r3m/config.yaml'
     elif modelid == "r3m_noaug":
         foldername = "original_r3m_noaug"
         modelurl = 'https://drive.google.com/uc?id=1k_ZlVtvlktoYLtBcfD0aVFnrZcyCNS9D'
